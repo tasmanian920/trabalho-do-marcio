@@ -1,0 +1,196 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #121314,
+        #1a1b1c,
+        #414446e3
+    );
+    min-height: 100vh;
+}
+
+
+/* CABEÇALHO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(9, 9, 9, 0.65);
+    border-bottom: 1px solid #ffffffe3;
+}
+
+.topo h1 {
+    font-size: 25px;
+}
+
+/* ABAS */
+.abas {
+    display: flex;
+    gap: 25px;
+}
+
+.abas a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.abas a:hover {
+    color: #f6de06;
+}
+
+.autor-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* --- RESET BÁSICO --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* --- CABEÇALHO (MANTIDO NO TOPO COMO O ORIGINAL) --- */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu a {
+  color: #cccccc;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 4px;
+}
+
+/* --- ESTRUTURA DO CONTEÚDO (LAYOUT EM COLUNAS) --- */
+.main-container {
+  max-width: 1150px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; /* Impede a imagem de esticar a altura toda */
+}
+
+/* --- LADO ESQUERDO: TEXTO --- */
+.conteudo-texto {
+  flex: 1; /* Ocupa todo o espaço restante da tela */
+}
+
+.conteudo-texto h1 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.subtitulo-autor {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin-bottom: 4px;
+}
+
+.data-publicacao {
+  display: block;
+  font-size: 13px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.caixa-destaque {
+  background-color: #1e1e1e;
+  border-left: 4px solid #4a90e2;
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 16px;
+  color: #f0f0f0;
+  margin-bottom: 24px;
+}
+
+.conteudo-texto h2 {
+  font-size: 22px;
+  color: #ffffff;
+  margin: 32px 0 12px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333333;
+}
+
+.conteudo-texto p {
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #cccccc;
+  text-align: justify;
+}
+
+/* --- LADO DIREITO: IMAGEM --- */
+.coluna-imagem {
+  width: 320px; /* Largura fixa para a imagem não ficar gigante */
+  flex-shrink: 0;
+  position: sticky;
+  top: 20px; /* A imagem acompanha a rolagem se a página for longa */
+}
+
+.card-livro {
+  background-color: #1e1e1e;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #333333;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.capa-livro {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+}
+

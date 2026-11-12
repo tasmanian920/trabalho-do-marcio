@@ -1,0 +1,228 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #121314,
+        #1a1b1c,
+        #414446e3
+    );
+    min-height: 100vh;
+}
+
+
+/* CABEÇALHO */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: rgba(9, 9, 9, 0.65);
+    border-bottom: 1px solid #ffffffe3;
+}
+
+.topo h1 {
+    font-size: 25px;
+}
+
+/* ABAS */
+.abas {
+    display: flex;
+    gap: 25px;
+}
+
+.abas a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.abas a:hover {
+    color: #f6de06;
+}
+
+.autor-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+/* CONTAINER DO FILME */
+.filme-container {
+    display: flex;
+    gap: 40px;
+    max-width: 110000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.capa-filme img {
+    width: 320px;
+    border-radius: 90px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.detalhes-filme {
+    color: rgb(238, 232, 232);
+    flex: 1;
+}
+
+.detalhes-filme h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.sinopse {
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 35px;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.info-list strong {
+    width: 200px;
+    color: #aaa;
+}
+
+.info-list span {
+    color: white;
+}
+
+/* BOTÃO */
+.botao {
+    display: inline-block;
+    padding: 15px 28px;
+    background: #f2f532;
+    color: #090a0b;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #ecf07dfb;
+    transform: translateY(-3px);
+}
+
+
+.container-filme {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  padding: 200px;
+}
+
+.poster {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.detalhes-filme {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+/* Estilo do botão TRAILLER */
+.btn-trailer {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background-color: #d4e157; 
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+}
+
+.btn-trailer:hover {
+  background-color: #c0ca33;
+}
+/* Deixa a ficha técnica e o botão na mesma linha */
+.ficha-e-botao {
+  display: flex;
+  align-items: flex-start; 
+  gap: 80px;               
+  margin-top: 25px;        
+
+}
+
+.ficha-tecnica p {
+  margin: 8px 0;
+  color: #ffffff;
+}
+
+/* Estilo do botão amarelo */
+.btn-trailer {
+  display: inline-block;
+  background-color: #f3e03b; 
+  color: #1e1e1e;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px 36px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  transition: background-color 0.2s;
+}
+
+.btn-trailer:hover {
+  background-color: #d9c626; 
+}
+
+/* FICHA TÉCNICA E BOTÃO */
+.ficha-e-botao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* FICHA TÉCNICA */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* BOTÃO TRAILER */
+.area-botao .botao {
+    display: inline-block;
+    margin-top: 0;
+    padding: 14px 36px;
+}
+
+.area-botao .botao {
+    margin: 0;
+    display: inline-block;
+}
+
+
+
+
